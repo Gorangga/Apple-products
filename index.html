@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/theme.css" />
   <link rel="stylesheet" href="./css/main.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
@@ -124,23 +125,62 @@
       </div>
     </nav>
 
+    <!-- <section> begin ============================-->
     <section id="home" class="py-0">
       <div class="bg-holder" style="background-image:url(./img/hero-bg.png); background-position: bottom; background-size: cover;"></div>
-
       <div class="container position-relative">
-        <div class="row align-items-center py-8">
-          <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
-            <img class="img-fluid" src="./img/mobile.png" width="350" alt="">
+        <div class="row align-items-center py-9">
+          <div class="col-md-7 col-lg-6 text-center text-md-start">
+            <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 Apple is the most valuable <br class="d-block d-lg-none d-xl-block" /> brand in the world<img class="img-fluid float-start me-3" src="img/arrow-right.png" alt=""/></span>
+            <h1 class="mb-4 display-3 fw-bold lh-sm mt-5">Совршени производи <br class="d-block d-lg-none d-xl-block" />по најниски цени!</h1>
+            <p class="mt-3 mb-4 fs-1">Одбери го твојот нов телефон или паметен часовник<br class="d-none d-lg-block" /> и купи го по најниска цена!</p>
+            <a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Провери цени!</a>
+            <!-- <a class="btn btn-link ps-md-4" href="#" role="button"> Watch demo video</a> -->
           </div>
-          <div class="col-md-7 col-lg-6 text-center text-md-start"><span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 Најмногу продадени производи во 2021год.<img class="img-fluid float-start me-3" src="assets/img/illustrations/arrow-right.png" alt=""/></span>
-            <h1 class="mb-4 display-3 fw-bold lh-sm">Совршени производи <br class="d-block d-lg-none d-xl-block" />по најниски цени!</h1>
-            <p class="mt-3 mb-4 fs-1">по најниски цени! <br class="d-none d-lg-block" />managing your personal budgets.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Try for free</a><a class="btn btn-link ps-md-4" href="#" role="button"> Watch demo video</a>
+          <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
+            <img class="img-fluid mt-5" src="./img/iPhone 13 series green.png" width="350" alt="">
           </div>
         </div>
       </div>
-
     </section>
 
+    <!-- <section> begin ============================-->
+    <section class="py-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto text-center">
+            <h2>Best products</h2>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center pt-3">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide chapternav-item chapternav-item-iphone-13-pro">
+                <a class="chapternav-link" href="">
+                  <figure class="chapternav-icon"></figure>
+                  <span class="icon-label">iPhone 13</span>
+                </a>
+              </div>
+              <div class="swiper-slide align-items-center justify-content-center">
+                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+              </div>
+              <div class="swiper-slide align-items-center justify-content-center">
+                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+              </div>
+              <div class="swiper-slide align-items-center justify-content-center">
+                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+              </div>
+              <div class="swiper-slide align-items-center justify-content-center">
+                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
 
 
   </main>
@@ -148,6 +188,23 @@
 
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/theme.js"></script>
+    
+  <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          slidesPerColumn: 2,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+      </script>
+  
 </body>
 
 </html>
