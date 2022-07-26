@@ -145,11 +145,11 @@
     </section>
 
     <!-- <section> begin ============================-->
-    <section class="py-7">
+    <section id="proizvodi" class="py-7">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 mx-auto text-center">
-            <h2>Best products</h2>
+            <h2>Производи</h2>
           </div>
         </div>
         <div class="row wrapper-row pt-3">
@@ -157,7 +157,9 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="img-box">
-                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                    <a href="https://mobelix.com.mk/mk/brendovi/apple">
+                      <img class="swiper-slide-img" src="./img/products/iphone.png" alt="">
+                    </a>
                   </div>
                   <div class="detail-box">
                     <span class="icon-label">iPhone</span>
@@ -165,34 +167,34 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="img-box">
-                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                    <img class="swiper-slide-img" src="./img/products/watch.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <span class="icon-label">iPhone</span>
+                    <span class="icon-label">Watch</span>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img-box">
-                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                    <img class="swiper-slide-img" src="./img/products/accessories.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <span class="icon-label">iPhone</span>
+                    <span class="icon-label">Додатоци</span>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img-box">
-                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                    <img class="swiper-slide-img" src="./img/products/airpods.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <span class="icon-label">iPhone</span>
+                    <span class="icon-label">AirPods</span>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="img-box">
-                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                    <img class="swiper-slide-img" src="./img/products/airtags.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <span class="icon-label">iPhone</span>
+                    <span class="icon-label">AirTag</span>
                   </div>
                 </div>
             </div>
@@ -217,14 +219,34 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 4,
-          slidesPerColumn: 2,
+          slidesPerView: 3,
+          // slidesPerColumn: 2,
           spaceBetween: 10,
           // centeredSlides: true,
           pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,
           },
+
+        // Responsive breakpoints
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            }
+          }
+
         });
       </script>
   

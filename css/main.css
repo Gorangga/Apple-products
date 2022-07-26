@@ -57,11 +57,20 @@
 }
 
 .detail-box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
     text-align: center;
+    margin-top: 0.5rem;
 }
 
 .swiper-slide {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .swiper-slide-img {
+        max-height: 60px;
+    }
 }
