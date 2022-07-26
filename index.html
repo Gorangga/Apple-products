@@ -148,31 +148,53 @@
     <section class="py-7">
       <div class="container">
         <div class="row">
-          <div class="col-12 mx-auto text-center">
+          <div class="col-md-6 col-lg-6 mx-auto text-center">
             <h2>Best products</h2>
           </div>
         </div>
-        <div class="row align-items-center justify-content-center pt-3">
+        <div class="row wrapper-row pt-3">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide chapternav-item chapternav-item-iphone-13-pro">
-                <a class="chapternav-link" href="">
-                  <figure class="chapternav-icon"></figure>
-                  <span class="icon-label">iPhone 13</span>
-                </a>
-              </div>
-              <div class="swiper-slide align-items-center justify-content-center">
-                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
-              </div>
-              <div class="swiper-slide align-items-center justify-content-center">
-                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
-              </div>
-              <div class="swiper-slide align-items-center justify-content-center">
-                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
-              </div>
-              <div class="swiper-slide align-items-center justify-content-center">
-                <img src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
-              </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <span class="icon-label">iPhone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <span class="icon-label">iPhone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <span class="icon-label">iPhone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <span class="icon-label">iPhone</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img class="swiper-slide-img" src="./img/icons/iphone_13_pro_light__bywz8u012wk2_large.svg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <span class="icon-label">iPhone</span>
+                  </div>
+                </div>
             </div>
             <div class="row pt-5">
               <div class="swiper-pagination"></div>
@@ -195,9 +217,10 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
+          slidesPerView: 4,
           slidesPerColumn: 2,
-          spaceBetween: 20,
+          spaceBetween: 10,
+          // centeredSlides: true,
           pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,

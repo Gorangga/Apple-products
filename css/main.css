@@ -42,3 +42,26 @@
     background-repeat: no-repeat;
     width: 38px;
 }
+
+.swiper-slide-img {
+    align-items: center;
+}
+
+.wrapper-row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.img-box {
+    align-items: center;
+}
+
+.detail-box {
+    text-align: center;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
