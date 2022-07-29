@@ -21,6 +21,10 @@ a {
     z-index: -10;
 }
 
+.bg-light {
+    background-color: #f2f2f4 !important;
+}
+
 .icon-label {
     font-size: 0.8rem;
 }
