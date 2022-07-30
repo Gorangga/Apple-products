@@ -149,7 +149,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 mx-auto text-center">
-            <h2>Производи</h2>
+            <h2 class="section-title">Производи</h2>
           </div>
         </div>
         <div class="row wrapper-row pt-3">
@@ -260,6 +260,11 @@
       <!-- <section> begin ============================-->
         <section class="py-5 bg-light mt-8" id="iphone-products">
           <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 mx-auto text-center fw-bold">
+                <h2 class="section-title">Твојот НОВ iPhone</h2>
+              </div>
+            </div>
             <div class="row wrapper-row mt-3">
               <div class="swiper swiperIphone">
                 <div class="swiper-wrapper">
@@ -278,6 +283,7 @@
                               <p class="h5 price">
                                 <!-- <del class="mr-2 small">66400ден.</del><br>65200ден. -->
                               </p>
+                              <h4 class="fw-bold">128GB</h4>
                               <button class="btn btn-outline-primary mb-2">Повеќе</button>
                             </div>
                           </div>
@@ -296,10 +302,11 @@
                             </div>
                             <div class="col-12">
                               <h5>Apple</h5>
-                              <h3 class="fw-bold">iPhone 13 Pro</h3>
+                              <h3 class="fw-bold">iPhone 13 Pro Max</h3>
                               <p class="h5 price">
                                 <!-- <del class="mr-2 small">66400ден.</del><br>65200ден. -->
                               </p>
+                              <h4 class="fw-bold">128GB</h4>
                               <button class="btn btn-outline-primary mb-2">Повеќе</button>
                             </div>
                           </div>
@@ -322,6 +329,7 @@
                               <p class="h5 price">
                                 <!-- <del class="mr-2 small">66400ден.</del><br>65200ден. -->
                               </p>
+                              <h4 class="fw-bold">256GB</h4>
                               <button class="btn btn-outline-primary mb-2">Повеќе</button>
                             </div>
                           </div>
@@ -340,10 +348,11 @@
                             </div>
                             <div class="col-12">
                               <h5>Apple</h5>
-                              <h3 class="fw-bold">iPhone 13 Pro</h3>
+                              <h3 class="fw-bold">iPhone 13 Pro Max</h3>
                               <p class="h5 price">
                                 <!-- <del class="mr-2 small">66400ден.</del><br>65200ден. -->
                               </p>
+                              <h4 class="fw-bold">256GB</h4>
                               <button class="btn btn-outline-primary mb-2">Повеќе</button>
                             </div>
                           </div>
@@ -404,6 +413,55 @@
           </div>
         </section>
 
+              <!-- <section> begin ============================-->
+      <section class="py-6">
+
+        <div class="container">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="img/watch/Watch Series 7.png" alt="" /></div>
+              <div class="col-md-6 text-center text-md-start">
+                <h6 class="fw-bold fs-4 display-3 lh-sm">Apple Watch<br />Series 7</h6>
+                <p class="my-4 pe-xl-5">Full screen ahead.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="img/watch/Always-On Retina display.png" width="60" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">Always-On Retina display</h5>
+                      <p class="mt-2 mb-0">Nearly 20% larger than Apple Watch SE Over 50% larger than Series 3</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="img/watch/Blood Oxygen app.png" width="60" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">Blood Oxygen app</h5>
+                      <p class="mt-2 mb-0">Blood Oxygen app measurements are not intended for medical use, including self‑diagnosis or consultation with a doctor, and are only designed for general fitness and wellness purposes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="img/watch/ECG app.png" width="60" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">ECG app</h5>
+                      <p class="mt-2 mb-0">The ECG app is available on Apple Watch Series 4 and later (not including Apple Watch SE) with the latest version of iOS and watchOS.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="img/watch/Emergency SOS.png" width="60" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">Emergency SOS</h5>
+                      <p class="mt-2 mb-0">International emergency calling Fall detection</p>
+                    </div>
+                  </div>
+                </div><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Дознај повеќе</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+
 
 
 
@@ -450,9 +508,21 @@
 
         });
         var swiper = new Swiper(".swiperIphone", {
+          
+        //   effect: "coverflow",
+        // grabCursor: true,
+        // centeredSlides: true,
+        // slidesPerView: "auto",
+        // coverflowEffect: {
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        // },
+          
           slidesPerView: 3,
-          // slidesPerColumn: 2,
           spaceBetween: 10,
+          // slidesPerColumn: 2,
           // centeredSlides: true,
           pagination: {
             el: ".swiper-pagination",
